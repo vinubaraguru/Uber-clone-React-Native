@@ -3,6 +3,8 @@ import tw from 'tailwind-react-native-classnames';
 import React from 'react';
 import { Icon } from 'react-native-elements';
 import { useNavigation } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
+import { setOrigin } from '../slices/navSlice';
 
 const  data = [
     {
@@ -21,6 +23,7 @@ const  data = [
 ]
 const NavOptions = () => {
   const navigation = useNavigation()
+//   const origin = useSelector(setOrigin)
   return (
     <View>
       <FlatList
